@@ -1,0 +1,1 @@
+Here we present user outputs and VeriRef's outputs produced for comparative testing. User results are annotated texts. VeriRef's results are the webpage results. 
