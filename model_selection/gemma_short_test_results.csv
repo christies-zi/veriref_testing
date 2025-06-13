@@ -1,0 +1,2328 @@
+Number,Answer,Model Answer
+
+Basic Tests
+
+1,"<bos>Given Monica went for a walk. Is the statement that Monica went for a walk correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. It is a factual statement that Monica went for a walk.<eos>",True
+2,"<bos>Given Sam loves running. Is the statement that Sam enjoys running correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The word ""enjoy"" means to have a positive feeling or experience towards something. Since Sam loves running, it can be inferred that he enjoys running.<eos>",True 
+3,"<bos>Given Marina ate ice-cream. Is the statement that Marina did not eat ice-cream correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not correct because the context does not provide any information about whether Marina ate ice-cream or not.<eos>",True
+4,"<bos>Given Max likes hockey. Is the statement that Max hates hockey correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The given context does not provide any information about Max's dislike of hockey.<eos>",False
+5,"<bos>Given It was raining yesterday. Is the statement that Yesterday, it was rainy correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. It is a factual statement that was established by the weather report.<eos>",True
+6,"<bos>Given It was extremely cold and rainy a week ago. Is the statement that A week ago the weather was sunny and reallly warm correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is not given in the context, so I cannot answer this question from the provided context.<eos>",False
+7,"<bos>Given Daniel missed the school because he caught a cold.. Is the statement that Daniel got ill, so he did not go to classes correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The passage indicates that Daniel missed school because he caught a cold.<eos>",True 
+8,"<bos>Given Ben's flight got cancelled, so he did not go to New York. Is the statement that Ben could not go to New York because he got ill correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The fact that Ben's flight got cancelled does not mean that he was ill and could not go to New York.<eos>",False
+9,"<bos>Given My new laptop costs 999£. Is the statement that I bought a laptop for less than 1000£ correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. You bought a laptop for less than 1000£.<eos>",True 
+10,"<bos>Given There was a car accident next to my house. Is the statement that There was a car accident next to my house correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. It is based on the premise that you live nearby the location of the accident.<eos>",True
+11,"<bos>Given I live in a very safe street. Is the statement that The area where I live is dangerous correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is not given in the context, so I cannot answer this question from the provided context.<eos>",False
+12,"<bos>Given My friend went to music festival yesterday. Is the statement that My friend went to music festival yesterday correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. It is a factual statement that can be verified by checking the event calendar or social media posts from the festival.<eos>",True
+
+Multi Sentence Input
+
+13,"<bos>Given Michael Jordan was born on 17 th February 1963 and is a successful basketball player. 
+Throughout his career, he won a total of six NBA (National Basketball Association) 
+championships with his team.. Is the statement that Michael Jordan was born on 17 th February 1963 correct? Reply with a 'Yes', 'No' or 'Not given'<eos>",True
+14,"<bos>Given Serena Williams is a famous tennis player who was born on 26th September 1981 in Saginaw, Michigan. In total, Serena has won 23
+Grand Slam singles titles and 14 Grand Slam doubles titles.
+These achievements mean that Serena has won more titles
+than any other player since professional athletes
+were allowed to join the tournament in 1968.. Is the statement that Serena has won 25 Grand Slam singles. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The text does not specify whether Serena has won 25 Grand Slam singles titles.<eos>",False
+15,"<bos>Given Jesse Owens was born in Oakville, Alabama on 12th September 1913.
+An incredible track and field athlete, Jesse won a total of four Olympic
+gold medals. At the age of nine, Jesse and his family moved to Cleveland, Ohio where
+his sporting talents began to be noticed at school. Throughout 1935, Jesse
+competed in a total of 42 different track and field events and won them all.
+This incredible feat earned him a place at the 1936 Olympics which were
+held in Berlin.. Is the statement that Jesse Owens was born in Cleveland, Ohio correct? Reply with a 'Yes', 'No' or 'Not given'<eos>",False
+16,"<bos>Given Malala was born on 12 th July 1997 and she was raised in Swat
+Valley in North Pakistan. During her early childhood, Malala’s
+hometown of Mingora was a tourist hotspot and held many
+festivals. Her parents aptly named Malala after Malala of the
+Maiwand (a courageous woman who helped to protect her village
+from invasion over 100 years before).. Is the statement that Mingora was a popular among tourists correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Mingora was a popular tourist hotspot in the early childhood of Malala.<eos>",True
+17,"<bos>Given Malala has two younger brothers, Khushal and Atal, and her parents were determined
+to ensure that she, unlike many of her peers, was afforded the same education and
+opportunities as them. Malala loved school yet, at the time in Pakistan, all schools for girls
+were being ordered to close: Malala was unable to go to school as her brothers had.
+Malala began to write an anonymous blog about her
+experience of the unequal treatment of girls in Pakistan:
+a risky topic for a young girl to speak about at the
+time. To protect her identity, she wrote using the name,
+Gul Makai. Having just given her first speech on rights
+to education, Malala no longer wanted to hide her
+identity. Her blog became very popular and she was
+even interviewed for a documentary. As her popularity
+grew, she went on to win several peace awards and she
+attended a lot of prestigious events. Is the statement that Malala wrote a book anonymously when she was 11 years old correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The passage says that Malala began to write an anonymous blog about her experience of the unequal treatment of girls in Pakistan when she was 11 years old.<eos>",False
+18,"<bos>Given Some people did not agree with what Malala had to say; they did not want her views to
+become well known. Due to this, Malala was injured as she travelled on a bus home from
+school. She was flown to Birmingham, UK, to treat the wounds that she had suffered. Despite
+being very ill, Malala made a miraculous recovery and was released from hospital less than
+three months later.
+Messages of sympathy and support for Malala flooded in from around the world, with a host
+of celebrities and famous politicians offering messages of support. The President of Pakistan,
+Asif Ali Zardari, created an education fund in honour of Malala.
+Continuing Activism
+Malala was determined to continue her activism in
+support of the right to education for all. Only nine
+months after her injury, Malala took to the stage at the
+United Nations (the organisation which aims to ensure
+world peace and security) on her 16th birthday. She
+stated clearly that nothing had changed and that she
+had more strength, power and courage than ever. “My
+dreams are the same,” she bravely stated. The United
+Nations named the day, ‘Malala Day’.
+Regardless of the views of others, Malala continues to
+campaign for equal rights in education. At the age of 17,
+she was the youngest person in the world to receive the
+Nobel Peace Prize: a prestigious award given annually
+to people who do outstanding work to contribute to
+world peace.
+Malala currently lives in England and is studying
+for a degree in Philosophy, Politics and Economics at
+university. Malala considers Benazir Bhutto, the first
+female president of Pakistan, to be her role model. She
+says her dream is to be a politician: a job where she can
+help to make a difference. With the help of her father,
+Malala has started a charity called The Malala Fund,
+which aims to support girls from around the world to be
+able to learn and lead.. Is the statement that Malala won the Nobel Peace Prize when she was 17 years old correct? Reply with a 'Yes', 'No' or 'Not given'<eos>",True
+19,"<bos>Given Malala was born on 12 th July 1997 and she was raised in Swat
+Valley in North Pakistan. During her early childhood, Malala’s
+hometown of Mingora was a tourist hotspot and held many
+festivals. Her parents aptly named Malala after Malala of the
+Maiwand (a courageous woman who helped to protect her village
+from invasion over 100 years before).
+Education was highly regarded in Malala’s family and her father, Ziauddin Yousafzai (a
+poet and the principal of a girls’ school) was a firm believer in equal rights for boys and
+girls. Malala calls her mother, Toor Pekai Yousafzai, ‘brave and courageous’ for supporting
+her husband’s dreams and ambitions, as well as taking care of the family and their home.
+Malala has two younger brothers, Khushal and Atal, and her parents were determined
+to ensure that she, unlike many of her peers, was afforded the same education and
+opportunities as them. Malala loved school yet, at the time in Pakistan, all schools for girls
+were being ordered to close: Malala was unable to go to school as her brothers had.. Is the statement that Malala’s mother’s name 
+is Toor Pekai Yousafzai. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The name of Malala's mother is Toor Pekai Yousafzai.<eos>",True
+
+Harder Multi Sentence Ipout
+
+20,"<bos>Given In the splendid palace of the Emerald City, which is in the
+center of the fairy Land of Oz, is a great Throne Room. This
+is where Princess Ozma, the Ruler, sits in a throne of
+glistening emeralds for an hour each day and listens to all the
+troubles of her people, which they are sure to tell her about.
+Around Ozma's throne, on such occasions, are grouped all
+the important personages1 of Oz, such as the Scarecrow,
+Tiktok the Clockwork Man, the Tin Woodman, the Wizard
+of Oz, and other famous fairy people. Little Dorothy usually
+has a seat at Ozma's feet, and crouched on either side the
+throne are two enormous beasts known as the Hungry Tiger
+and the Cowardly Lion.
+These two beasts are Ozma's chief guardians, but as
+everyone loves the beautiful girl Princess there has never
+been any disturbance in the great Throne Room, or anything
+for the guardians to do but look fierce and solemn2 and keep
+quiet until the Royal Audience is over and the people go
+away to their homes.
+Of course no one would dare be naughty while the huge Lion
+and Tiger crouched beside the throne; but the fact is, the
+people of Oz are very seldom naughty. So Ozma's big guards
+are more ornamental3 than useful. No one realizes that
+better than the beasts themselves.
+One day, after everyone had left the Throne Room except the
+Cowardly Lion and the Hungry Tiger, the Lion yawned and
+said to his friend:
+'I'm getting tired of this job. No one is afraid of us and no
+one pays any attention to us.'
+'That is true,' replied the big Tiger, purring softly. 'We
+might as well be in the thick jungles where we were born, as
+trying to protect Ozma when she needs no protection. And
+I'm dreadfully hungry all the time.'. Is the statement that Lion and the Tiger bored at the beginning 
+of the story because nobody acts bad around the Lion and the Tiger. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. The passage indicates that the Lion and the Tiger are bored at the beginning of the story because nobody acts bad around them.<eos>",True
+21,"<bos>Given In the splendid palace of the Emerald City, which is in the
+center of the fairy Land of Oz, is a great Throne Room. This
+is where Princess Ozma, the Ruler, sits in a throne of
+glistening emeralds for an hour each day and listens to all the
+troubles of her people, which they are sure to tell her about.
+Around Ozma's throne, on such occasions, are grouped all
+the important personages1 of Oz, such as the Scarecrow,
+Tiktok the Clockwork Man, the Tin Woodman, the Wizard
+of Oz, and other famous fairy people. Little Dorothy usually
+has a seat at Ozma's feet, and crouched on either side the
+throne are two enormous beasts known as the Hungry Tiger
+and the Cowardly Lion.
+These two beasts are Ozma's chief guardians, but as
+everyone loves the beautiful girl Princess there has never
+been any disturbance in the great Throne Room, or anything
+for the guardians to do but look fierce and solemn2 and keep
+quiet until the Royal Audience is over and the people go
+away to their homes.
+Of course no one would dare be naughty while the huge Lion
+and Tiger crouched beside the throne; but the fact is, the
+people of Oz are very seldom naughty. So Ozma's big guards
+are more ornamental3 than useful. No one realizes that
+better than the beasts themselves.
+One day, after everyone had left the Throne Room except the
+Cowardly Lion and the Hungry Tiger, the Lion yawned and
+said to his friend:
+'I'm getting tired of this job. No one is afraid of us and no
+one pays any attention to us.'
+'That is true,' replied the big Tiger, purring softly. 'We
+might as well be in the thick jungles where we were born, as
+trying to protect Ozma when she needs no protection. And
+I'm dreadfully hungry all the time.'. Is the statement that Lion and the Tiger bored at the beginning 
+of the story because nobody wants to hurt Ozma. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. The passage says that the Lion and the Tiger are more ornamental than useful.<eos>",True
+22,"<bos>Given In the splendid palace of the Emerald City, which is in the
+center of the fairy Land of Oz, is a great Throne Room. This
+is where Princess Ozma, the Ruler, sits in a throne of
+glistening emeralds for an hour each day and listens to all the
+troubles of her people, which they are sure to tell her about.
+Around Ozma's throne, on such occasions, are grouped all
+the important personages1 of Oz, such as the Scarecrow,
+Tiktok the Clockwork Man, the Tin Woodman, the Wizard
+of Oz, and other famous fairy people. Little Dorothy usually
+has a seat at Ozma's feet, and crouched on either side the
+throne are two enormous beasts known as the Hungry Tiger
+and the Cowardly Lion.
+These two beasts are Ozma's chief guardians, but as
+everyone loves the beautiful girl Princess there has never
+been any disturbance in the great Throne Room, or anything
+for the guardians to do but look fierce and solemn2 and keep
+quiet until the Royal Audience is over and the people go
+away to their homes.
+Of course no one would dare be naughty while the huge Lion
+and Tiger crouched beside the throne; but the fact is, the
+people of Oz are very seldom naughty. So Ozma's big guards
+are more ornamental3 than useful. No one realizes that
+better than the beasts themselves.
+One day, after everyone had left the Throne Room except the
+Cowardly Lion and the Hungry Tiger, the Lion yawned and
+said to his friend:
+'I'm getting tired of this job. No one is afraid of us and no
+one pays any attention to us.'
+'That is true,' replied the big Tiger, purring softly. 'We
+might as well be in the thick jungles where we were born, as
+trying to protect Ozma when she needs no protection. And
+I'm dreadfully hungry all the time.'
+'You have enough to eat, I'm sure,' said the Lion, swaying
+his tail slowly back and forth.
+'Enough, perhaps; but not the kind of food I long for,'
+answered the Tiger. 'What I'm hungry for is fat babies. I
+have a great desire to eat a few fat babies. Then, perhaps, the
+people of Oz would fear me and I'd become more
+important.'
+'True,' agreed the Lion. 'It would stir up quite a scene if you
+ate but one fat baby. As for myself, my claws are sharp as
+needles and strong as crowbars. My teeth are powerful
+enough to tear a person to pieces in a few seconds. I could
+spring upon a man and make chop suey of him. There would
+be wild excitement in the Emerald City. People would fall
+upon their knees and beg me for mercy. That, in my opinion,
+would render me very important.'
+'After you had torn the person to pieces, what would you do
+next?' asked the Tiger sleepily.
+'Then I would roar so loudly it would shake the earth and
+stalk away to the jungle to hide myself, before anyone could
+attack me or kill me for what I had done.'
+'I see,' nodded the Tiger. 'You are really cowardly.'
+'To be sure. That is why I am named the Cowardly Lion.
+That is why I have always been so tame and peaceable. But
+I'm awfully tired of being tame,' added the Lion, with a sigh,
+'and it would be fun to raise a row and show people what a
+terrible beast I really am.'
+The Tiger remained silent for several minutes, thinking
+deeply as he slowly washed his face with his left paw. Then
+he said:
+'I'm getting old, and it would please me to eat at least one fat
+baby before I die. Suppose we surprise these people of Oz
+and prove our power. What do you say? We will walk out of
+here just as usual and the first baby we meet I'll eat in a
+jiffy4. And the first man or woman you meet, you will tear to
+pieces. Then we will both run out of the city gates and gallop
+across the country and hide in the jungle before anyone can
+stop us.'
+'All right. I'm game,' said the Lion, yawning again so that
+he showed two rows of large sharp teeth.
+The Tiger got up and stretched his great, sleek body.. Is the statement that The Lion and 
+the Tiger made their plan because they need to be fed more food. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The Lion and the Tiger made their plan because they need to be fed more food.<eos>",False
+23,"<bos>Given Timid and weeping, the boy had attended his mother's
+funeral; gloomy and shy, he had listened to Siddhartha, who
+greeted him as his son and welcomed him at his place in
+Vasudeva's hut. Pale, he sat for many days by the hill of the
+dead, did not want to eat, gave no open look, did not open his
+heart, met his fate with resistance and denial.
+Siddhartha spared him and let him do as he pleased, he
+honoured his mourning. Siddhartha understood that his son
+did not know him, that he could not love him like a father.
+Slowly, he also saw and understood that the eleven-year-old
+was a pampered boy, a mother's boy, and that he had grown
+up in the habits of rich people, accustomed to finer food, to a
+soft bed, accustomed to giving orders to servants. Siddhartha
+understood that the mourning, pampered child could not
+suddenly and willingly be content with a life among
+strangers and in poverty. He did not force him, he did many a
+chore for him, always picked the best piece of the meal for
+him. Slowly, he hoped to win him over, by friendly patience.
+Rich and happy, he had called himself, when the boy had
+come to him. Since time had passed on in the meantime, and
+the boy remained a stranger and in a gloomy disposition1,
+since he displayed a proud and stubbornly disobedient heart,
+did not want to do any work, did not pay his respect to the
+old men, stole from Vasudeva's fruit-trees, then Siddhartha
+began to understand that his son had not brought him
+happiness and peace, but suffering and worry. But he loved
+him, and he preferred the suffering and worries of love over
+happiness and joy without the boy. Since young Siddhartha
+was in the hut, the old men had split the work. Vasudeva had
+again taken on the job of the ferryman2 all by himself, and
+Siddhartha, in order to be with his son, did the work in the
+hut and the field.
+For a long time, for long months, Siddhartha waited for his
+son to understand him, to accept his love, to perhaps
+reciprocate3 it. For long months, Vasudeva waited,
+watching, waited and said nothing. One day, when
+Siddhartha the younger had once again tormented his father
+very much with spite and an unsteadiness in his wishes and
+had broken both of his rice-bowls, Vasudeva took his friend
+aside in the evening and talked to him.. Is the statement that Siddhartha has raised 
+his son since infancy. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is not given in the context, so I cannot answer this question from the provided context.<eos>",False
+24,"<bos>Given Timid and weeping, the boy had attended his mother's
+funeral; gloomy and shy, he had listened to Siddhartha, who
+greeted him as his son and welcomed him at his place in
+Vasudeva's hut. Pale, he sat for many days by the hill of the
+dead, did not want to eat, gave no open look, did not open his
+heart, met his fate with resistance and denial.
+Siddhartha spared him and let him do as he pleased, he
+honoured his mourning. Siddhartha understood that his son
+did not know him, that he could not love him like a father.
+Slowly, he also saw and understood that the eleven-year-old
+was a pampered boy, a mother's boy, and that he had grown
+up in the habits of rich people, accustomed to finer food, to a
+soft bed, accustomed to giving orders to servants. Siddhartha
+understood that the mourning, pampered child could not
+suddenly and willingly be content with a life among
+strangers and in poverty. He did not force him, he did many a
+chore for him, always picked the best piece of the meal for
+him. Slowly, he hoped to win him over, by friendly patience.
+Rich and happy, he had called himself, when the boy had
+come to him. Since time had passed on in the meantime, and
+the boy remained a stranger and in a gloomy disposition1,
+since he displayed a proud and stubbornly disobedient heart,
+did not want to do any work, did not pay his respect to the
+old men, stole from Vasudeva's fruit-trees, then Siddhartha
+began to understand that his son had not brought him
+happiness and peace, but suffering and worry. But he loved
+him, and he preferred the suffering and worries of love over
+happiness and joy without the boy. Since young Siddhartha
+was in the hut, the old men had split the work. Vasudeva had
+again taken on the job of the ferryman2 all by himself, and
+Siddhartha, in order to be with his son, did the work in the
+hut and the field.
+For a long time, for long months, Siddhartha waited for his
+son to understand him, to accept his love, to perhaps
+reciprocate3 it. For long months, Vasudeva waited,
+watching, waited and said nothing. One day, when
+Siddhartha the younger had once again tormented his father
+very much with spite and an unsteadiness in his wishes and
+had broken both of his rice-bowls, Vasudeva took his friend
+aside in the evening and talked to him.. Is the statement that The boy grew up in a wealthy 
+home with servants.  correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The passage says that the boy grew up in a wealthy home with servants.<eos>",True
+25,"<bos>Given Timid and weeping, the boy had attended his mother's
+funeral; gloomy and shy, he had listened to Siddhartha, who
+greeted him as his son and welcomed him at his place in
+Vasudeva's hut. Pale, he sat for many days by the hill of the
+dead, did not want to eat, gave no open look, did not open his
+heart, met his fate with resistance and denial.
+Siddhartha spared him and let him do as he pleased, he
+honoured his mourning. Siddhartha understood that his son
+did not know him, that he could not love him like a father.
+Slowly, he also saw and understood that the eleven-year-old
+was a pampered boy, a mother's boy, and that he had grown
+up in the habits of rich people, accustomed to finer food, to a
+soft bed, accustomed to giving orders to servants. Siddhartha
+understood that the mourning, pampered child could not
+suddenly and willingly be content with a life among
+strangers and in poverty. He did not force him, he did many a
+chore for him, always picked the best piece of the meal for
+him. Slowly, he hoped to win him over, by friendly patience.
+Rich and happy, he had called himself, when the boy had
+come to him. Since time had passed on in the meantime, and
+the boy remained a stranger and in a gloomy disposition1,
+since he displayed a proud and stubbornly disobedient heart,
+did not want to do any work, did not pay his respect to the
+old men, stole from Vasudeva's fruit-trees, then Siddhartha
+began to understand that his son had not brought him
+happiness and peace, but suffering and worry. But he loved
+him, and he preferred the suffering and worries of love over
+happiness and joy without the boy. Since young Siddhartha
+was in the hut, the old men had split the work. Vasudeva had
+again taken on the job of the ferryman2 all by himself, and
+Siddhartha, in order to be with his son, did the work in the
+hut and the field.
+For a long time, for long months, Siddhartha waited for his
+son to understand him, to accept his love, to perhaps
+reciprocate3 it. For long months, Vasudeva waited,
+watching, waited and said nothing. One day, when
+Siddhartha the younger had once again tormented his father
+very much with spite and an unsteadiness in his wishes and
+had broken both of his rice-bowls, Vasudeva took his friend
+aside in the evening and talked to him.. Is the statement that Siddhartha is understanding 
+and kind to his son correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The passage says that Siddhartha understood that the eleven-year-old was a pampered boy, a mother's boy, and that he had grown up in the habits of rich people, accustomed to finer food, to a soft bed, accustomed to giving orders to servants.<eos>",True
+26,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Asian carp is an unpopular 
+menu item since it is hard to prepare because of all the little bones correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Sure, the statement is correct. Asian carp is an unpopular menu item since it is hard to prepare because of all the little bones.<eos>",True
+27,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Asian carp is a very fattening fish, 
+so it is an unpopular menu item correct? Reply with a 'Yes', 'No' or 'Not given'
+
+**Answer: Yes**
+
+The passage clearly states that the introduction of Asian carp into American waters is a war, and that the US government is actively working to stop the spread of these invasive fish.<eos>",False
+26,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Asian carp is an 
+unpopular menu item because some of them are toxic and unsafe to eat. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Sure, the statement is correct. Asian carp is an unpopular menu item because some of them are toxic and unsafe to eat.<eos>",True
+27,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Asian carp is a very fattening fish, 
+so it is an unpopular menu item correct? Reply with a 'Yes', 'No' or 'Not given'
+
+**Answer: Yes**
+
+The passage clearly states that the introduction of Asian carp into American waters is a war, and that the US government is actively working to stop the spread of these invasive fish.<eos>",False
+28,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that According to the text, 
+one species of Asian carp is the silver carp. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Sure, the statement is correct. The text says that one species of Asian carp is the silver carp.<eos>",False
+29,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that It is argued 
+Asian carp could disrupt the ecosystem in Lake Michigan correct? Reply with a 'Yes', 'No' or 'Not given'
+
+**Answer: Yes**
+
+The passage argues that Asian carp pose a serious threat to the ecosystem in Lake Michigan and that the US government is at war with a fish.<eos>",True
+30,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that A waterskier is the person
+most threatened by silver carp in a local water source correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. A waterskier is the person most threatened by silver carp in a local water source.<eos>",True
+30,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that A beachgoer is the person who is
+most threatened by silver carp in a local water source correct? Reply with a 'Yes', 'No' or 'Not given'
+
+**Answer: Yes**
+
+The passage states that the Asian carp poses a serious threat to water skiers and boaters, and that the US government has been on the offensive against these large-bellied invaders.<eos>",True
+31,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Silver carp can jump up to twenty feet in the air. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Sure, the answer is Yes.
+
+The statement is correct. Silver carp can jump up to twenty feet in the air.<eos>",False
+32,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Silver carp can grow to be 100 lbs. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Sure, the answer is Yes.
+
+The statement that Silver carp can grow to be 100 lbs. is correct.<eos>",True
+34,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Silver carp are also known as 'flying carp.' correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Sure, the answer is Yes.
+
+The statement is correct. Silver carp are also known as 'flying carp'.<eos>",True
+33,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Silver carp are also known as 'flying carp.' correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Sure, the answer is Yes.
+
+The statement is correct. Silver carp are also known as 'flying carp'.<eos>",True
+35,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Silver carp are also known as 'flying carp.' correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Sure, the answer is Yes.
+
+The statement is correct. Silver carp are also known as 'flying carp'.<eos>",True
+36,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that Silver carp have been declared an 'injurious species' by the government. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. The US government has declared the silver carp to be an ""injurious species"".<eos>",True
+37,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that The author believes that 
+it would be best for the fishing industry if the canal were closed permanently. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The author believes that it would be best for the fishing industry if the canal were closed permanently.<eos>",True
+38,"<bos>Given The United States has a lengthy history of going to
+war. It is a nation born from war. Pick any year since
+1776, and the odds of America being involved in at
+least one war is over 90%. Every US President has
+faced war. Still, it may surprise you to hear that the US
+government is at war with a fish.
+Asian carp were introduced to American waters during
+the 1970s. Southern fish farmers began importing them
+to help clean their ponds. Asian carp are phenomenal
+cleaners. Unfortunately, it didn't take too long for them
+to escape from these ponds, perhaps from flooding, and
+get into the Mississippi River. From there they have
+followed their natural tendency to swim upstream. This
+tendency may lead them into the Great Lakes and
+Canada, a nightmare scenario for fisherman.
+Asian carp are large fish. One species, the silver carp,
+can grow to be 100 pounds. But despite their size, they
+feed from the bottom of the food chain. That means
+that they eat plankton and algae. A one hundred pound
+fish can eat an awful lot of sea scum, and some of it is
+toxic. The carp are resistant to the toxins, but we aren't.
+Some Asian carp are hazardous to eat because they
+have so many algal toxins in their systems. They also
+have lots of tiny bones in their meat, which makes
+them difficult to prepare. Asian carp is not a popular
+delicacy.
+Introducing the Asian carp into waters that have not
+known them can be devastating. Beneath the surface of
+the water is a unique ecosystem. This system rests
+delicately on a balance that has evolved over millions
+of years. Then along come these big, hungry bottom
+feeders to mess up everything. They breed rapidly and
+densely populate the waters. Worse still, they compete
+with the native bottom feeders. The native bottom
+feeders are smaller. Larger, tastier fish like salmon eat
+them. The native bottom feeders are an important part
+of the ecosystem. When the Asian carp outperform
+them, the whole food chain suffers, all the way up to
+the people.
+Not only do Asian carp mess up the food chain, they
+mess up people. Seriously. An Asian carp will bust you
+in head. Remember that silver carp can be 100 pounds.
+There is a reason why they are also known as 'flying
+carp.' This particular species of Asian carp has a
+tendency to jump when frightened. They can jump up
+to ten feet in the air, and the sound of boat motors
+frightens them. Watch out watersportists! In 2003 a
+woman jetskier collided with one and broke her nose
+and a vertebra. She almost drowned. In 2008 a teenager
+broke his jaw on one while tubing. Many others have
+been injured by these flying logs. Asian carp pose a
+serious threat to water skiers and boaters.
+In 2007 the U.S. Department of the Interior declared all
+silver carp to be an injurious species. In 2010, the State
+of Michigan passed the $30 million CARPACT. In
+2012 Congress approved the 'Stop Invasive Species'
+act, legislation written solely to protect the Great Lakes
+from Asian carp. The government has been on the
+offensive against these large-bellied invaders.
+But Asian carp are difficult to catch. Since they eat
+from the bottom, they do not go for lures or baits like
+most large fish. The best way to stop them is to keep
+them out. The Great Lakes are connected to the
+Mississippi River through the 28-mile Chicago
+Sanitary and Ship Canal. For Chicagoans, it is the final
+point of resistance.
+A series of multimillion-dollar electrical barriers have
+been built along the canal. The barriers are effective at
+keeping adult carp at bay, but some fear that baby carp
+may pass through. The United States Army Corps of
+Engineers has been deployed along with EPA. In 2009
+they poisoned the entire canal with rotenone, a
+chemical that kills fish. The $3 million operation netted
+over 90 tons of dead fish, and a single carp.
+Some think that Great Lakes must be cut off from the
+Mississippi River. The Michigan Attorney General
+sued to have the canal closed. The Ontario government
+and some Great Lake states have also taken legal
+action. But the courts have been persuaded by the value
+of the canal as a shipping conduit thus far. In the
+meantime, the barriers continue to hold, but how long
+can they? The carp have the Great Lakes under siege. Is
+this a war that we are destined to lose?. Is the statement that The Great Lake states agree 
+fully on a solution to the Asian carp problem. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The passage does not provide any information about the Great Lakes states' agreement on a solution to the Asian carp problem.<eos>",False
+
+Analysing indirect conclusions and subtlties
+
+39,"<bos>Given Bob got the highest score in the class. Is the statement that Bob got an A correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Bob got the highest score in the class, which is an A.<eos>",False/Cannot Say
+40,"<bos>Given Nobody failed the test, and Bob got the highest score in the 
+class. Is the statement that Bob passed the test correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The statement is not given in the context, and therefore cannot be determined to be correct or incorrect.<eos>",True
+41,"<bos>Given Amelia does not have any brothers. Is the statement that Amelia got a sister correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The context indicates that Amelia does not have any brothers, implying that she got a sister.<eos>",False/Cannot Say
+42,"<bos>Given Amelia has 2 siblings. Amelia does not have any brothers. Is the statement that Amelia has 2 sisters correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Yes, Amelia has 2 sisters.<eos>",True
+43,"<bos>Given We analysed 2 articles about monkey Olly. The first article states that Olly
+is 2 years old. The second article says that Olly is 3 years old. Is the statement that Olly is 2 years old correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The second article says that Olly is 3 years old, which contradicts the first article's statement that he is 2 years old.<eos>",False/Cannot Say
+44,"<bos>Given We analysed 2 articles about monkey Olly. The first article states that Olly
+is 2 years old. The second article says that Olly is 3 years old. Is the statement that Olly is 3 years old correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The second article says that Olly is 3 years old, which contradicts the first article's statement that Olly is 2 years old.<eos>",False/Cannot Say
+45,"<bos>Given We analysed 2 articles about monkey Olly. The first article states that Olly
+is 2 years old. The second article says that Olly is 3 years old. Is the statement that We cannot say how old is Olly correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The second article provides a specific age of 3 years for Olly, contradicting the first statement of 2 years.<eos>",True
+46,"<bos>Given The scientists developed a new spieces of apples that have a blue colour. The same 
+labaratory developed a spieces of oranges that have bright green colour. Is the statement that Scientists managed
+to create blue apples, green oranges, and they are about to produce blue oranges correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not correct. The scientists did not develop a new species of apples that have a blue color, or oranges that have a bright green color.<eos>",False
+47,"<bos>Given Over 1000000£ will be invested in public transport of London. Is the statement that 2000000£ pounds will be
+invested in the development of London transport correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. 2000000£ will be invested in the development of London transport.<eos>",False
+48,"<bos>Given Our preliminary research showed that the newly developed medication could
+potentially be useful for treating cancer. But the results are not final, and more 
+mdeical trials need to be conducted, especially to analyse long-term side effects. 
+However, current results look promising. Is the statement that We can surely
+say that the new medication is effective in treating cancer correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Answer: No
+
+Explanation: The statement is not correct. The results are not final and more medical trials need to be conducted to analyse long-term side effects.<eos>",False
+49,"<bos>Given Our preliminary research showed that the newly developed medication could
+potentially be useful for treating cancer. But the results are not final, and more 
+mdeical trials need to be conducted, especially to analyse long-term side effects. 
+However, current results look promising. Is the statement that We can surely
+say that the new medication does not have any side effects correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Answer: No
+
+Explanation: The passage does not provide any information to support the claim that the medication does not have any side effects.<eos>",False
+50,"<bos>Given Our preliminary research showed that the newly developed medication could
+potentially be useful for treating cancer. But the results are not final, and more 
+mdeical trials need to be conducted, especially to analyse long-term side effects. 
+However, current results look promising. Is the statement that We do not know how effective is
+the new medication for treating cancer, but we know for sure that 
+it has no side effects correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not correct. The fact that we do not know how effective the new medication is for treating cancer does not mean that it has no side effects.<eos>",False
+51,"<bos>Given Our preliminary research showed that the newly developed medication could
+potentially be useful for treating cancer. But the results are not final, and more 
+mdeical trials need to be conducted, especially to analyse long-term side effects. 
+However, current results look promising. Is the statement that The new medication is very effective 
+for cancer treatment, but more studies of potential side effects are needed correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. The phrase ""but more studies of potential side effects are needed"" indicates that the results are promising but not conclusive.<eos>",False
+52,"<bos>Given Our preliminary research showed that the newly developed medication could
+potentially be useful for treating cancer. But the results are not final, and more 
+mdeical trials need to be conducted, especially to analyse long-term side effects. 
+However, current results look promising. Is the statement that There is at least one case when the new
+medication helped to cure cancer correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The passage does not provide any information about a case when the new medication helped to cure cancer.<eos>",False
+53,"<bos>Given Our preliminary research showed that the newly developed medication could
+potentially be useful for treating cancer. But the results are not final, and more 
+mdeical trials need to be conducted, especially to analyse long-term side effects. 
+However, current results look promising. Is the statement that The new medication was tested on animals,
+and now it needs to be tested on humans correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The new medication was tested on animals before being tested on humans.<eos>",False
+54,"<bos>Given 8 out of 10 respondents noticed improvment in sleep quality 
+after taking the newly developed medication. Is the statement that 80% of respondents 
+reported improved sleep quality correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The sample size is not given in the context, so we cannot determine the percentage of respondents who reported improved sleep quality.<eos>",True
+55,"<bos>Given 8 out of 10 respondents noticed improvment in sleep quality 
+after taking the newly developed medication. Is the statement that 80% of respondents 
+said that they started to sleep better after using the new medication correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The given information does not provide enough data to determine the percentage of respondents who experienced sleep improvement.<eos>",True
+56,"<bos>Given 8 out of 10 respondents noticed improvment in sleep quality 
+after taking the newly developed medication. Is the statement that 60% of respondents 
+reported improved sleep quality correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The given statement is not correct. The sample size is small (8 respondents), and the results may not be reliable.<eos>",True
+57,"<bos>Given 8 out of 10 respondents noticed improvment in sleep quality 
+after taking the newly developed medication. Is the statement that every one in two respondents 
+said that they started to sleep better after using the new medication correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. The given information indicates that 50% of the respondents noticed an improvement in sleep quality after taking the medication.<eos>",True
+
+Analysing data that might contradictory to model's current beliefs
+
+58,"<bos>Given Rome is the capital of France. Is the statement that Rome is the capital of France correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Rome is the capital of France.<eos>","False statement, but true if assume context"
+59,"<bos>Given Kids do not like sweets. Is the statement that Kids are not into sweets correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Kids are not into sweets.<eos>",True
+60,"<bos>Given New studies show that eating excess amount of sugar does not affect weight gain. Is the statement that Eating a lot
+of sugar is directly related to weight gain correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The passage does not provide any evidence to support the claim that eating excess amount of sugar directly affects weight gain.<eos>",False/Might need checking
+61,"<bos>Given Scientific community admitted that previous studies were not correct, and that actually
+caffeine is not addictive. Is the statement that The latest discoveries show that one cannot get addicted to caffeine correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. The scientific community has admitted that previous studies were not correct, and that caffeine is not addictive. The latest discoveries show that one cannot get addicted to caffeine.<eos>",True/Might need checking
+62,"<bos>Given A man with 210 bones was admitted to hospital. Is the statement that It was recorded that at least one human had 210 bones correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. It was recorded that at least one human had 210 bones.<eos>",True 
+63,"<bos>Given Modern neuroscience confirms humans use most of their brain. Is the statement that Humans use only 10%-15% of their brain correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not given in the context.<eos>",False
+65,"<bos>Given Goldfish can remember information for at least several days. Is the statement that Goldfish have a 3-second memory correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The research on goldfish memory is inconclusive and there is no clear consensus on the duration of their memory.<eos>",False
+66,"<bos>Given Bulls react to the movement, not to red colour as many people believe. Is the statement that Bulls are irritated by red colour correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Bulls react to the movement of the animal, not to the colour of the animal's body.<eos>",False
+67,"<bos>Given There is no historical evidence that Vikings wore helmets with horns. Is the statement that Vikings wore horned helmets correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not given in the context, and there is no historical evidence to support it.<eos>",False
+68,"<bos>Given Apart from the traditional 5 senses, humans also have sense of balance and temperature. Is the statement that Humans have only 5
+senses:taste, hearing, sight, smell, touch correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The human senses include five traditional senses: taste, hearing, sight, smell, and touch.<eos>",False
+69,"<bos>Given Although it might seem that hair and nails keep growing after death, this is not true. They appear longer 
+simply because skin dehydrates. Is the statement that Skin and hair stop growing after death correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The passage says that skin dehydrates, which can make hair and nails appear longer.<eos>",True 
+70,"<bos>Given The assumption that tongue has specific taste zones is false. Is the statement that The receptors for different tastes are
+spread across the tongue correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The assumption that tongue has specific taste zones is false. The receptors for different tastes are spread across the tongue, and not in specific zones.<eos>",True
+71,"<bos>Given Lightning stroke Empire state building multiple times. Is the statement that Lightning never strikes the same place twice correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is not given in the context, so I cannot answer this question from the provided context.<eos>",False
+
+Additional Basic Tests (AI generated 20/10/2024
+
+72,"<bos>Given Lucy is an excellent swimmer. Is the statement that Lucy swims very well correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The context indicates that Lucy is an excellent swimmer.<eos>",True
+73,"<bos>Given John dislikes spicy food. Is the statement that John enjoys eating spicy food correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not correct because John dislikes spicy food, so eating spicy food would be wrong for him.<eos>",False
+74,"<bos>Given Anna graduated last year. Is the statement that Anna completed her studies last year correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The context specifies that Anna graduated last year, implying that she completed her studies then.<eos>",True
+75,"<bos>Given The sky was clear this morning. Is the statement that The sky was cloudy this morning correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The sky was clear this morning, so the statement is true.<eos>",False
+76,"<bos>Given Tom owns a red car, and he drives it every day. Is the statement that Tom drives a red vehicle correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The statement is true, as Tom owns a red car and drives it every day.<eos>",True
+77,"<bos>Given Jenny has three siblings. Is the statement that Jenny is an only child correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The statement is saying that Jenny is the only child among her three siblings.<eos>",False
+78,"<bos>Given Mark failed his math test. Is the statement that Mark passed his math test correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The fact that Mark failed his math test does not mean that he passed it.<eos>",False
+79,"<bos>Given The museum closes at 5 PM. Is the statement that The museum shuts its doors at 5 PM correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The museum closes at 5 PM.<eos>",True
+80,"<bos>Given Lisa loves playing the guitar. Is the statement that Lisa hates playing the guitar correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The context does not provide any information about Lisa's dislike for playing the guitar.<eos>",False
+81,"<bos>Given The train arrived 10 minutes late. Is the statement that The train was delayed by 10 minutes correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The train was delayed by 10 minutes because it arrived 10 minutes late.<eos>",True
+82,"<bos>Given George is allergic to peanuts. Is the statement that George can eat peanuts without any issues correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+George is allergic to peanuts, so eating peanuts without any issues is not correct.<eos>",False
+83,"<bos>Given The library is located downtown. Is the statement that The library is situated in the city center correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The library is located downtown, in the city center.<eos>",True
+84,"<bos>Given This novel was published in 2020. Is the statement that This book came out in 2020 correct? Reply with a 'Yes', 'No' or 'Not given'
+
+Yes<eos>",True
+85,"<bos>Given Emma baked a chocolate cake. Is the statement that Emma made a dessert with chocolate correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The phrase ""baked a chocolate cake"" indicates that Emma baked a chocolate cake.<eos>",True
+86,"<bos>Given The package was delivered yesterday. Is the statement that The package arrived yesterday correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The package was delivered yesterday.<eos>",True
+87,"<bos>Given Peter is afraid of heights. Is the statement that Peter enjoys climbing tall buildings correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not correct because Peter is afraid of heights.<eos>",False
+88,"<bos>Given The road to the village is under construction. Is the statement that The road to the village is closed for repairs correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The road to the village is closed for repairs.<eos>",True
+89,"<bos>Given Sarah is an experienced traveler. Is the statement that Sarah has visited many countries correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. We are not given any information about the number of countries Sarah has visited, so we cannot conclude whether it is true or false.<eos>",True
+90,"<bos>Given The concert starts at 8 PM. Is the statement that The performance begins at 8 PM correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The concert starts at 8 PM.<eos>",True
+91,"<bos>Given Jack broke his leg while skiing. Is the statement that Jack injured himself skiing correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Jack injured himself skiing.<eos>",True
+92,"<bos>Given The restaurant serves Italian cuisine. Is the statement that The restaurant specializes in Italian food correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The restaurant serves Italian cuisine, which is a type of Italian cuisine.<eos>",True
+93,"<bos>Given Julia works as a graphic designer. Is the statement that Julia is employed as a graphic designer correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Julia is employed as a graphic designer.<eos>",True
+94,"<bos>Given Alice visited the Grand Canyon last summer. Is the statement that Alice traveled to the Grand Canyon in the summer correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Alice visited the Grand Canyon last summer.<eos>",True
+95,"<bos>Given Paul forgot his umbrella at home. Is the statement that Paul left his umbrella behind at home correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The statement is a factual statement that Paul forgot his umbrella at home.<eos>",True
+96,"<bos>Given My phone battery lasts all day. Is the statement that My phone battery needs charging every hour correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The average phone battery lasts all day, and does not need charging every hour.<eos>",False
+97,"<bos>Given The marathon took place on Sunday. Is the statement that The marathon happened on Sunday correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The marathon took place on Sunday.<eos>",True
+98,"<bos>Given Laura speaks three languages fluently. Is the statement that Laura knows three languages well correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Laura knows three languages fluently.<eos>",True
+99,"<bos>Given James enjoys watching horror movies. Is the statement that James is scared of horror movies and avoids them correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not correct, as it is not accurate to assume that because James enjoys watching horror movies, he is scared of them.<eos>",False
+
+Additional Multi Sentence Input Tests (AI generated 20/10/2024
+
+100,"<bos>Given Emily woke up early and went for a run in the park. Later, she had breakfast at her 
+favorite café and met her friend Anna for coffee.. Is the statement that Emily started her day with a jog, had 
+breakfast, and met Anna for coffee. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. It accurately describes the events that happened to Emily in the morning.<eos>",True
+101,"<bos>Given David spent the entire weekend working on his art project. He also managed to catch up on his 
+favorite TV show and call his mom to check in.. Is the statement that David worked on an art project and watched his favorite show. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The sentence indicates that David worked on an art project and also watched his favorite TV show.<eos>",True
+102,"<bos>Given The train station was crowded in the morning because of delays. Many passengers were frustrated, 
+but the staff managed to keep things under control.. Is the statement that The train station was empty, and passengers were calm. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is not correct. The passage does not provide any information about the number of passengers or the condition of the train station in the morning.<eos>",False
+103,"<bos>Given Jenny and her family went to the beach yesterday. They built sandcastles, swam in 
+the sea, and had ice-cream before heading home.. Is the statement that Jenny’s family visited the beach and swam in the sea. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. It is a factual statement that Jenny's family visited the beach and swam in the sea.<eos>",True
+104,"<bos>Given The company announced a new product launch next month. They also revealed plans 
+to expand to three more countries in the coming year.. Is the statement that The company plans to launch a new product and expand globally. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. The company plans to launch a new product and expand globally.<eos>",True
+105,"<bos>Given Mike loves photography and often spends weekends capturing sunsets. He also enjoys hiking in the mountains 
+and exploring new trails.. Is the statement that Mike dislikes photography and prefers staying indoors on weekends. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is incorrect. The context does not provide any information about Mike's dislike of photography.<eos>",False
+106,"<bos>Given The movie was about a young hero who overcame great odds to save her village. It featured stunning 
+visuals and a heartwarming story.. Is the statement that The movie told the story of a hero who saved her village with breathtaking visuals. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The movie did tell the story of a young hero who overcame great odds to save her village.<eos>",True
+107,"<bos>Given Sophia prepared a delicious dinner for her guests. She made pasta, salad, and a chocolate 
+cake for dessert. Everyone enjoyed the meal.. Is the statement that Sophia cooked a wonderful meal, including vanilla cake for dessert. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The passage indicates that Sophia prepared pasta, salad, and a chocolate cake for dessert.<eos>",False
+108,"<bos>Given The science museum hosted an exhibition about space exploration. Visitors could see 
+real astronaut suits, learn about the moon landing, and interact with virtual reality displays.. Is the statement that The museum’s 
+exhibition focused on space exploration, with interactive displays and astronaut suits. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The museum's exhibition focused on space exploration, with interactive displays and astronaut suits.<eos>",True
+109,"<bos>Given Alex studied all night for the math test. He also made time to review his notes from science class and prepare 
+for a history presentation.. Is the statement that Alex only prepared for his math test and ignored other subjects. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The passage does not provide any information about Alex's preparation for the other subjects, so it is not possible to determine if he only prepared for his math test.<eos>",False
+110,"<bos>Given The weather was sunny and warm in the morning. However, by the afternoon, it 
+started to rain heavily, catching many people by surprise.. Is the statement that The day started sunny but turned rainy by the afternoon. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The weather changed from sunny to rainy by the afternoon.<eos>",True
+111,"<bos>Given Liam adopted a rescue dog named Max last month. Since then, he has been training Max and taking him on daily walks 
+in the park.. Is the statement that Liam recently adopted a dog and has been training it. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The passage indicates that Liam recently adopted a dog named Max and has been training it since then.<eos>",True
+112,"<bos>Given The town festival featured live music, food stalls, and games for children. The highlight of the evening 
+was a spectacular fireworks display.. Is the statement that The town festival had music, food, games, but no fireworks. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The statement is not correct. The passage clearly states that the highlight of the evening was a spectacular fireworks display.<eos>",False
+113,"<bos>Given Martha planted flowers in her garden during the spring. She also installed a small 
+fountain and added a bench to create a cozy space.. Is the statement that Martha focused only on planting flowers and 
+didn’t make other changes to her garden. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is No.
+
+The passage does not provide any information about the other changes Martha made to her garden, so we cannot conclude that she focused only on planting flowers.<eos>",False
+114,"<bos>Given The professor explained the topic clearly and answered all the students’ questions. He 
+also provided additional reading materials for those who wanted to learn more.. Is the statement that The professor explained 
+the topic, answered questions, and shared extra resources. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The professor fulfilled all the responsibilities of explaining the topic, answering questions, and sharing extra resources.<eos>",True
+115,"<bos>Given Karen baked cookies for her son’s school event. She also made sandwiches 
+and packed some juice boxes for the children to enjoy.. Is the statement that Karen's son prepared cookies, 
+sandwiches, and drinks for the school event. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The statement is saying that Karen baked cookies, made sandwiches, and packed juice boxes for the children to enjoy at the school event.<eos>",False
+116,"<bos>Given Originally, Sarah and her friends planned to go to seaside. Howver, they changed their plans, and went on 
+a trip to the mountains, Sarah and her friends went skiing and snowboarding. This was almost as relaxing as swimming
+and sunbathing.. Is the statement that Sarah and her friends spent their trip sunbathing and swimming correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. Sarah and her friends spent their trip sunbathing and swimming.<eos>",False
+117,"<bos>Given The store had a special sale on electronics over the weekend. Many people lined up early to buy 
+discounted laptops, phones, and cameras.. Is the statement that The store held a weekend sale on electronics, attracting many buyers. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. The store held a weekend sale on electronics, attracting many buyers.<eos>",True
+118,"<bos>Given Tom’s team played their best match of the season yesterday. They scored three goals and won the game by a 
+large margin. The fans were thrilled.. Is the statement that Tom’s team lost their game, leaving fans disappointed. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The statement is correct. The passage indicates that Tom's team won the game by a large margin, implying that they scored three goals and won by a significant margin.<eos>",False
+119,"<bos>Given Alice spends her mornings meditating and practicing yoga. In the evenings, she 
+likes to read novels and write in her journal.. Is the statement that Alice’s daily routine includes meditation, yoga, 
+reading, and journaling. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+Alice's daily routine includes meditation, yoga, reading, and journaling.<eos>",True
+
+Additional Multi Sentence Input and Multi Sentence Output Tests (AI generated 20/10/2024
+
+120,"<bos>Given Yesterday, Maria woke up at 7 AM and went for a morning jog in the park. After her jog, she made a healthy breakfast 
+consisting of scrambled eggs and orange juice. Around 10 AM, Maria attended an online seminar about time management. 
+She found the tips helpful and decided to implement them. At noon, Maria called her friend Jessica to discuss an 
+upcoming road trip. In the afternoon, she cleaned her apartment and rearranged her furniture. Maria also spent an 
+hour reading a new novel. She cooked spaghetti for dinner and watched a documentary on wildlife. Before going to bed, 
+she wrote in her journal and planned her tasks for the next day. Maria felt productive and 
+satisfied with her day.. Is the statement that Maria attended a seminar about time management and found it helpful. She had lunch with Jessica and 
+planned a road trip. Maria also wrote in her journal before going to bed. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. Maria attended an online seminar about time management and found it helpful.<eos>",False
+121,"<bos>Given David spent his Saturday outdoors enjoying the beautiful weather. He started the day with a hike in the hills 
+and took several photographs of the landscape. On his way back, he stopped by a local café 
+to have a cup of coffee and a slice of cheesecake. In the afternoon, David went to the farmers' 
+market and bought fresh vegetables, fruits, and flowers. He returned home and spent some time 
+arranging the flowers in a vase. Later, he invited his neighbour over for tea and shared some homemade cookies. In the 
+evening, David watched a mystery movie and enjoyed some popcorn. Before going to bed, he read a 
+few chapters of his favorite book.. Is the statement that David went hiking and enjoyed coffee at a café. He hosted a small dinner 
+party with friends in the evening. Later, David watched a mystery movie before sleeping. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. David went hiking and enjoyed coffee at a café in the evening.<eos>",False
+121,"<bos>Given Sophie is an art student who loves painting landscapes. On Monday, she visited an art gallery to study the 
+works of famous painters. She spent the morning sketching some of her favorite pieces. Sophie met 
+her professor in the afternoon to discuss her project, which focuses on impressionist art. The 
+professor gave her valuable feedback and suggested some resources to explore. In the evening, 
+Sophie worked on her painting while listening to classical music. She used vibrant colors to 
+capture the beauty of a sunset over the ocean. Sophie also managed to submit her assignment 
+before the deadline. Before sleeping, she wrote down her ideas for the next painting.. Is the statement that Sophie spent her day 
+working on an impressionist art project and received feedback from her professor. She painted a sunset using bright 
+colors while enjoying music. Sophie later had dinner with her friends to celebrate finishing her assignment. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. Sophie spent her day working on an impressionist art project and received feedback from her professor. She painted a sunset using bright colors while enjoying music. Sophie later had dinner with her friends to celebrate finishing her assignment.<eos>",False
+122,"<bos>Given Tom works at a tech company and is passionate about coding. On Wednesday, he attended a meeting to discuss a 
+new project. After the meeting, Tom spent the rest of the morning coding a prototype for a 
+mobile app. During lunch, he chatted with his colleagues about their weekend plans. In the afternoon, 
+Tom fixed some bugs in the company’s website and tested its functionality. 
+He stayed late at work to complete his tasks. After returning home, he prepared a quick dinner and watched an episode of 
+his favorite show. Before going to bed, Tom read an article on artificial intelligence to stay 
+updated on the latest trends.. Is the statement that Tom spent the morning coding a mobile app and the afternoon fixing website bugs. He later 
+watched his favorite show. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. Tom spent the morning coding a mobile app and the afternoon fixing website bugs.<eos>",True
+123,"<bos>Given The school organized a sports day on Friday. The event started with a relay race in which several 
+teams participated. After that, there was a long jump competition and a 
+high jump event. The students cheered for their friends enthusiastically. Teachers also 
+joined in and played a friendly match of volleyball. During lunch, food 
+stalls served a variety of snacks and drinks. In the afternoon, there was a 
+tug-of-war competition that was the highlight of the day. The sports day ended with an 
+award ceremony where medals were distributed to the winners. Everyone enjoyed the 
+event and praised the organizers.. Is the statement that The school’s sports day included a relay race, tug-of-war, and an award ceremony. 
+Teachers participated in volleyball, and there were food stalls for lunch. In the evening, 
+a play was performed to conclude the event. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes. The statement is correct. The school's sports day included a relay race, tug-of-war, and an award ceremony.<eos>",False
+124,"<bos>Given Megan spent her Sunday afternoon at the botanical gardens. She took a leisurely stroll along the 
+flower-filled paths and admired the variety of plants. Megan also visited the greenhouse, 
+where she learned about exotic species. Later, she attended a photography workshop hosted 
+by a local artist. During the workshop, Megan learned new techniques for capturing nature 
+through the lens. After the session, she practiced by taking several photos of the garden. 
+In the evening, Megan had dinner at a café nearby and tried a new dish. She then returned
+home and spent some time editing her photos.. Is the statement that Megan visited the botanical gardens and attended a 
+photography workshop. She spent the afternoon taking photos and later edited them at home. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. Megan visited the botanical gardens and attended a photography workshop during her Sunday afternoon.<eos>",True
+125,"<bos>Given James is a passionate traveler who loves exploring new cities. Last month, he visited Paris, 
+where he toured the Louvre Museum and the Eiffel Tower. James also took a boat tour along 
+the Seine River and dined at a rooftop restaurant with a view of the city. After Paris, he 
+flew to London and visited Buckingham Palace, the British Museum, and Covent Garden. 
+James also went to a theater show in the West End and had a traditional English breakfast 
+at a local café. He spent the final day of his trip shopping in Oxford Street 
+before heading back home.. Is the statement that James traveled to Paris and visited the Louvre and Eiffel Tower. 
+He also flew to London, where he explored famous landmarks and enjoyed a West End show. 
+During his trip, he spent most of his time relaxing by the Seine River. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. James visited Paris and visited the Louvre Museum and the Eiffel Tower. He also flew to London and visited Buckingham Palace, the British Museum, and Covent Garden. During his trip, he spent most of his time relaxing by the Seine River.<eos>",False
+126,"<bos>Given Lily works as a marketing consultant and frequently travels for business. Last week, 
+she had a meeting in New York City with a potential client. The meeting went well, and they 
+discussed a new advertising campaign. After the meeting, Lily explored the city and visited 
+several famous landmarks, including Times Square and Central Park. She also took a guided tour 
+of the Empire State Building and had dinner at a well-known seafood restaurant. The next day, 
+she flew to Chicago for another meeting. There, she worked on finalizing a contract with a 
+different client before heading back home.. Is the statement that Lily traveled to New York for a business meeting 
+and visited landmarks like Central Park. Afterward, she 
+flew to Chicago to meet another client and finalize a contract. She 
+also spent the evening at a local restaurant before returning home. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+Lily traveled to New York City for a business meeting and visited landmarks like Central Park. Afterward, she flew to Chicago to meet another client and finalize a contract. She also spent the evening at a local restaurant before returning home.<eos>",False
+127,"<bos>Given Ethan is an avid cyclist and participates in local races on weekends. 
+Last Saturday, he competed in a 50-mile race across the countryside. 
+The race began early in the morning and was organized by the local 
+cycling club. Ethan was excited to join the event, as it was his first 
+time participating in such a long race. Throughout the race, he stayed 
+hydrated and paced himself to avoid exhaustion. After completing the course, 
+Ethan was awarded a silver medal for his performance. He spent the rest of the day 
+relaxing with his teammates and enjoying the post-race party.. Is the statement that Ethan raced in a 50-mile 
+competition and finished second, receiving a silver medal. He joined the event early in 
+the morning and paced himself during the race. Later, he attended a celebration with 
+his teammates. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+The statement is correct. Ethan raced in a 50-mile competition and finished second, receiving a silver medal.<eos>",True
+128,"<bos>Given Rachel is a talented cook who enjoys experimenting with new recipes. On Friday, 
+she decided to make a three-course dinner for her friends. She started with a 
+fresh tomato and basil salad, followed by a main course of roasted 
+chicken with vegetables. For dessert, Rachel made a chocolate mousse, which 
+she served with a side of fresh berries. After dinner, they all played board games 
+and enjoyed some wine. Rachel’s friends were impressed with the meal and praised her 
+cooking skills. The next day, Rachel spent the afternoon baking a batch of 
+homemade cookies to share with her colleagues.. Is the statement that Rachel made a three-course dinner and 
+served chocolate mousse for dessert. She later baked cookies for her 
+colleagues and spent the evening playing board games. Rachel also attended a cooking 
+class to improve her skills. correct? Reply with a 'Yes', 'No' or 'Not given'
+
+The answer is Yes.
+
+Rachel made a three-course dinner consisting of a fresh tomato and basil salad, roasted chicken with vegetables for the main course, and chocolate mousse for dessert.<eos>",False
